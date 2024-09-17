@@ -1,11 +1,13 @@
-
 pipeline {
     agent any
+    tools {
+        maven 'Maven 3.9.9'  // Ensure this matches the label you configured for Maven in Jenkins
+    }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Islake/TimeCalculator.git'
+                git branch: 'master', url: 'https://github.com/Islake/TimeCalculator.git'
             }
         }
 
@@ -35,4 +37,3 @@ pipeline {
         }
     }
 }
-
