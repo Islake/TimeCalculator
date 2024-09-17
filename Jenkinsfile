@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven 3.9.9'  // Ensure this matches the label you configured for Maven in Jenkins
+        maven 'Maven3'  // Ensure this matches the label you configured for Maven in Jenkins
     }
 
     stages {
