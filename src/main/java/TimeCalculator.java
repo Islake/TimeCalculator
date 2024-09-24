@@ -5,4 +5,7 @@ public class TimeCalculator {
         }
         return distance / speed;
     }
+    public static void main(String[] args){
+        System.out.println("Done docker");
+    }
 }
